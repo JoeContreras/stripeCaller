@@ -15,7 +15,7 @@ router.post("/acceptPayment", async (req, res) => {
             function (err, paymentIntent){
             if (err!==null){
                 console.log("Error", err);
-                res.send("There was an error");
+                // res.send("There was an error");
 
             }else {
                 console.log("Payment success", paymentIntent)
