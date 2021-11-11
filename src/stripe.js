@@ -27,7 +27,6 @@ router.post("/acceptPayment", async (req, res) => {
         })
         // sendEmail(name, email, phone, message);
         // sendConfirmationEmail(email, name);
-        res.status(200).send("Email sent successfully");
     } catch (e) {
         res.status(400).send(e);
     }
